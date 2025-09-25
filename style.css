@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+nav {
+  background-color: rgba(123, 198, 199, 0.8);
+}
+
+.menu {
+  display: flex;             
+  justify-content: space-around; 
+  list-style: none;           
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.menu li a:hover {
+  background-color: rgba(123, 198, 199, 1);
+}
