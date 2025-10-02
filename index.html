@@ -7,16 +7,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div>
-    <ul class="menu">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Servicios</a></li>
-      <li><a href="#">Opciones</a></li>
-      <li><a href="#">Planes</a></li>
-      <li><a href="#">Contacto</a></li>
-    </ul>
-  </div>
-  <div class="sidebar">
+  <section class="exercise">
+    <h2>1. Menú horizontal (Flex)</h2>
+    <nav class="top-menu">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Servicios</a></li>
@@ -24,12 +17,62 @@
         <li><a href="#">Planes</a></li>
         <li><a href="#">Contacto</a></li>
       </ul>
+    </nav>
+  </section>
+
+  <section class="exercise">
+    <h2>2. Sidebar con menú (Flex)</h2>
+    <div class="layout">
+      <aside class="sidebar">
+        <ul class="sidebar-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Opciones</a></li>
+          <li><a href="#">Planes</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </aside>
+
+      <main class="main-content">
+        <h3>Contenido principal</h3>
+      </main>
+      <p>Aquí va el contenido de la página.  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis aliquid, nulla obcaecati incidunt ratione quis voluptate ipsam minima! Magni nulla porro ducimus aperiam odio eligendi architecto ab voluptate molestiae rerum.</p>
     </div>
-   
-    <main class="contenido">
-      <h1>Esto sería el contenido principal</h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam obcaecati consectetur distinctio animi ducimus soluta ratione earum? Quaerat distinctio debitis a, nobis quae labore quos deleniti quod quas exercitationem explicabo.</p>
-    </main>
-  </div>
+  </section>
+
+  <section class="exercise">
+    <h2>3. Tabla con Grid</h2>
+    <div class="grid-table" aria-label="Tabla con grid">
+      <div class="cell center">Celda 1</div>
+      <div class="cell center">Celda 2</div>
+      <div class="cell center">Celda 3</div>
+      <div class="cell center">Celda 4</div>
+      <div class="cell center">Celda 5</div>
+      <div class="cell center">Celda 6</div>
+      <div class="cell center">Celda 7</div>
+      <div class="cell center">Celda 8</div>
+      <div class="cell center">Celda 9</div>
+    </div>
+  </section>
+
+  <section class="exercise">
+    <h2>4. Grids anidados</h2>
+    <div class="outer-grid">
+      <div class="og-cell">1</div>
+      <div class="og-cell">2</div>
+      <div class="og-cell">3</div>
+
+      <div class="og-cell cell-with-nested">
+        <div class="nested-grid">
+          <div class="nested-header">Cabecera anidada (ocupa 2 columnas)</div>
+          <div class="nested-col">Anidada A</div>
+          <div class="nested-col">Anidada B</div>
+        </div>
+      </div>
+
+      <div class="og-cell">5</div>
+      <div class="og-cell">6</div>
+    </div>
+  </section>
 </body>
 </html>
